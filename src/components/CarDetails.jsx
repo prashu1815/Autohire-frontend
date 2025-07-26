@@ -21,7 +21,7 @@ function CarDetails() {
       return;
     }
 
-    axios.get(`http://localhost:1815/cars/${id}`, {
+    axios.get(`https://autohire-backend-exdn.onrender.com/${id}`, {
       headers: {
         Authorization: `Bearer ${token}`
       }
