@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-import '../Styles/CarList.css';
+import '../Styles/Cariist.css';
 
 function CarList() {
   const [cars, setCars] = useState([]);
