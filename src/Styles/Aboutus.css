@@ -1,0 +1,63 @@
+.aboutus-container {
+  
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 80px;
+  gap: 40px;
+
+  background-image: linear-gradient(
+      rgba(10, 10, 10, 0.7), 
+      rgba(30, 30, 30, 0.7)
+    ),
+    url('../assets/speedometer.jpg'); /* ✅ replace with your actual image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  color: #f0f0f0;
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+}
+
+
+.aboutus-content {
+  flex: 1;
+  max-width: 50%;
+}
+
+.aboutus-content h1 {
+  font-size: 2.8rem;
+  color: #d62828;
+  margin-bottom: 20px;
+}
+
+.aboutus-content p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.signature {
+  font-style: italic;
+  color: #444;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.aboutus-image {
+  flex: 1;
+  text-align: center;
+}
+
+.aboutus-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}

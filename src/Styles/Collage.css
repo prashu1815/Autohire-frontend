@@ -1,0 +1,127 @@
+.collage-layout {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 20px;
+  gap: 40px;
+  flex-wrap: nowrap; /* ✅ prevent wrapping */
+}
+
+/* Left side: 2 vertical images side by side */
+.left-images {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex: 1;
+  max-width: 50%; /* ✅ occupy half the container */
+}
+
+/* Right side: 3 horizontal images stacked vertically */
+.right-images {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+  max-width: 50%; /* ✅ occupy the other half */
+}
+
+/* Vertical images */
+.vertical-image {
+  width: 100%;
+  height: 50vw;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Horizontal images */
+.horizontal-image {
+  width: 100%;
+  height: 15.5vw;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+.image-overlay-group {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* prevents text from spilling out */
+  border-radius: 12px;
+}
+.overlay-text {
+  bottom: 5vw;
+  font-size: 3rem;
+  position: absolute;
+  width: 100%;
+  padding: 10px 12px;
+  text-align: center;
+  font-family: 'Orbitron', sans-serif; /* or your desired font */
+  font-weight: 600;
+  color: #ffffff;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+}
+
+
+.image-overlay-group {
+  position: relative;
+  display: inline-block;
+}
+
+
+
+/* Overlay image (img6) on top of img2 */
+.overlay-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  object-fit: cover;
+  pointer-events: none;
+  opacity: 0.4;
+  border-radius: 12px;
+
+  /* 👇 Fading bottom using mask */
+  mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+}
+
+
+.overlay-text1 {
+  position: absolute;
+  width: 100%;
+  padding: 10px 12px;
+  text-align: center;
+  font-family: 'Orbitron', sans-serif; /* or your desired font */
+  font-weight: 600;
+  color: #ffffff;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+  background: rgba(0, 0, 0, 0.2); /* optional semi-transparent bg */
+  backdrop-filter: blur(6px);     /* glassy look */
+  border-radius: 8px;
+  
+}
+/* Caption on top image */
+.overlay-text1 {
+  bottom: 21vw;
+  font-size: 4rem;
+}
+
+/* Caption on second image */
+.overlay-text2 {
+  bottom: 18vw;
+  font-size: 1.5rem;
+  position: absolute;
+  width: 100%;
+  padding: 10px 12px;
+  text-align: center;
+  font-family: 'Orbitron', sans-serif; /* or your desired font */
+  font-weight: 600;
+  color: #ffffff;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+  margin-left: 4vw;
+}
+
+

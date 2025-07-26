@@ -1,0 +1,92 @@
+.car-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
+  padding: 6rem 2rem 2rem; /* Top padding increased to push below navbar */
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.car-card {
+  background: #ffffff0d; /* translucent white */
+  backdrop-filter: blur(10px);
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #f1f1f1;
+  border: 1px solid #ffffff1a;
+}
+
+.car-card:hover {
+  transform: scale(1.04);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.5);
+}
+
+.car-image-wrapper {
+  width: 100%;
+  height: 190px;
+  overflow: hidden;
+  border-bottom: 1px solid #ffffff1a;
+}
+
+.car-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.car-content {
+  padding: 1.2rem;
+}
+
+.car-content h3 {
+  margin: 0;
+  font-size: 1.4rem;
+  color: #ffffff;
+}
+
+.car-type {
+  font-size: 0.9rem;
+  color: #cccccc;
+  margin-top: 0.3rem;
+}
+
+.car-info {
+  margin-top: 0.6rem;
+  font-size: 0.85rem;
+  color: #dddddd;
+}
+
+.price {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 0.8rem;
+  color: #00d9ff;
+}
+
+.book-btn {
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background: linear-gradient(to right, #ff512f, #dd2476); /* bold pink-red */
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  width: 100%;
+  font-weight: bold;
+}
+
+.book-btn:disabled {
+  background: #555;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.book-btn:hover:not(:disabled) {
+  transform: scale(1.03);
+  background: linear-gradient(to right, #ff4b2b, #ff416c);
+}
